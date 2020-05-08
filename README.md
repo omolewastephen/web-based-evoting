@@ -10,4 +10,4 @@ This is an administrative panel for an E-Voting Mobile Application. This softwar
 
 ## Author
 
-Designed with :red-heart: by [Dev. Lewa](https://github.com/omolewastephen)
+Created with :heart: by [Dev. Lewa](https://github.com/omolewastephen)
