@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/pnotify.custom.min.css"/>
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css"/>
 </head>
-<body>
+<body class="login-page">
 
 
 
