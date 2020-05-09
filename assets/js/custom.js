@@ -23,21 +23,8 @@ $("#p1").change(function(){
 	readURL(this);
 });
 
-function Error(text)
-{
 
-	$(function(){
-	PNotify.prototype.options.styling = "bootstrap3";
-	PNotify.prototype.options.styling = "fontawesome";
-    new PNotify({
-      title: 'Error Notification',
-      text: text,
-      desktop: true,
-      type:'error',
-      icon: true
-    });
-  });
-}
+
 
 
 $(document).ready(function(){
@@ -61,17 +48,48 @@ $(document).ready(function(){
 			Error("Fill the form to continue");
 		}
 
-
+		PNotify.prototype.options.styling = "bootstrap3";
 		$.ajax({
 			data: data,
 			cache: false,
 			url: "ajax.php",
 			type: "POST",
-			success: function(x){
-			    var json = JSON.parse(x);
+			success: function(xhr){
+				console.log(xhr);
+				if(xhr == 'true'){
+					new PNotify({
+				      title: 'Message',
+				      text: 'Authentication successful. Redirecting to dashboard',
+				      desktop: true,
+				      type:'success',
+				      icon: 'fa fa-bell',
+				      animate: true,
+				      delay: 3000,
+				      after_close: function(PNotify) {
+		                    submit.attr('disabled','disabled');
+						    submit.attr("value","Login Successful. Redirecting...");
+						    window.location = 'dashboard.php';
+		                }
+				    });
+				}else{
+					new PNotify({
+				      title: 'Message',
+				      text: 'Invalid login credentials. Please try again',
+				      desktop: true,
+				      type:'error',
+				      animation: "tada",
+				      icon: 'fa fa-times',
+				      delay: 3000,
+		              after_close: function(PNotify) {
+		                    submit.removeAttr('disabled');
+						    submit.attr("value","Login");
+		                }
+				    });
+				}
+			    
 			},
 			error: function(e){
-				Error(e.toString());
+				console.log(e);
 			}
 	    })
 

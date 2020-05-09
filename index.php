@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css"/>
-    <link rel="stylesheet" href="assets/css/pnotify.css"/>
+    <link rel="stylesheet" href="assets/css/pnotify.custom.min.css"/>
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css"/>
     <link rel="stylesheet" href="assets/css/login.css"/>
 
@@ -31,7 +31,7 @@
                 <img src="assets/img/logo.png" alt="logo" class="logo">
               </div>
               <p class="login-card-description">Admin Login</p>
-              <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="loginform" autocomplete="off">
+              <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="loginform">
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required>
@@ -59,7 +59,7 @@
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.dataTables.min.js"></script>
-<script src="assets/js/pnotify.js"></script>
+<script src="assets/js/pnotify.custom.min.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>
 </html>

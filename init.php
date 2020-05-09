@@ -5,4 +5,5 @@ spl_autoload_register(function($class){
   require "model/".$class.".php";
 });
 require('function.php');
+$db = new DB();
 ?>
