@@ -17,7 +17,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <a href="dashboard" class="navbar-brand">
-        <img src="./apple-touch-icon.png" width="60" height="60">
+        <img src="./assets/img/logo-w.png" class="img-fluid" width="210" height="100">
     </a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -25,14 +25,41 @@
 
     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
         <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">Profile</a>
+            <a href="dashboard" class="nav-item nav-link active">
+                <i class="fa fa-home" aria-hidden="true"></i> Home</a>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
+                <a href="#!" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-th-list" aria-hidden="true"></i> Election</a>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Inbox</a>
-                    <a href="#" class="dropdown-item">Sent</a>
-                    <a href="#" class="dropdown-item">Drafts</a>
+                    <a href="create" class="dropdown-item">Create</a>
+                    <a href="manage" class="dropdown-item">Manage Election</a>
+                    <a href="manage" class="dropdown-item">Manage Candidates</a>
+                    <a href="results" class="dropdown-item">Manage Results</a>
+                </div>
+            </div>
+           <div class="nav-item dropdown">
+                <a href="#!" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-poll" aria-hidden="true"></i> Result</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Manage Results</a>
+                    <a href="#" class="dropdown-item">Archived Results</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#!" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-users" aria-hidden="true"></i> Student</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Manage Students</a>
+                    <a href="#" class="dropdown-item">Feedbacks</a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#!" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-menu">
+                    <a href="setting#election" class="dropdown-item">Election</a>
+                    <a href="setting#general" class="dropdown-item">General</a>
+                    <a href="setting#admin" class="dropdown-item">System Admin</a>
                 </div>
             </div>
         </div>
@@ -45,7 +72,7 @@
             </div>
         </form> -->
         <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link">Login</a>
+            <a href="#" class="nav-item nav-link"><i class="fa fa-power-off" aria-hidden="true"></i> Log Out</a>
         </div>
     </div>
 </nav>
