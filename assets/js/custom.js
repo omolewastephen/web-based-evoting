@@ -52,7 +52,7 @@ $(document).ready(function(){
 		$.ajax({
 			data: data,
 			cache: false,
-			url: "ajax.php",
+			url: "ajax",
 			type: "POST",
 			success: function(xhr){
 				console.log(xhr);
