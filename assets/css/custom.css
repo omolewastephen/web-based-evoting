@@ -1,5 +1,5 @@
 body,html{
-	font-size: 13px;
+	font-size: 16px;
 	line-height: 20px;
 	overflow-x: hidden;
 	text-rendering: optimizeLegibility;
@@ -14,7 +14,8 @@ body,html{
 	background-image: url(../../images/beige_paper.png);
 }
 .bg-light{
-  background-color: #6716b9 !important;
+  background-color: #28a745 !important;
+  border-bottom:3px solid #cabe04;
 }
 .icon{
     color:#fff ;
