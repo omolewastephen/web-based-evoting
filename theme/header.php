@@ -63,14 +63,9 @@
                 </div>
             </div>
         </div>
-       <!--  <form class="form-inline">
-            <div class="input-group">                    
-                <input type="text" class="form-control" placeholder="Search">
-                <div class="input-group-append">
-                    <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
-                </div>
-            </div>
-        </form> -->
+        <form class="form-inline">
+            <div class="switch-mode"><i class="far fa-moon"></i> Dark Mode</div>
+        </form>
         <div class="navbar-nav">
             <a href="#" class="nav-item nav-link"><i class="fa fa-power-off" aria-hidden="true"></i> Log Out</a>
         </div>
