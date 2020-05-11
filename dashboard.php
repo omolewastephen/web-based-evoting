@@ -1,7 +1,7 @@
 <?php
 include 'theme/header.php';
 ?>
-<div class="content mt-3">
+<div class="content mt-5">
 	<div class="container">
 		<div class="layer mb-3">
 			<h3 class="h5">System Statistics</h3>

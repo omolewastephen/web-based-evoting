@@ -1,4 +1,4 @@
-<?php require 'init.php'; ?>
+<?php require 'theme\init.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>

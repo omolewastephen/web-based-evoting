@@ -125,7 +125,8 @@ var chartx = new Chart(cty, {
             label: 'Election Stats',
             backgroundColor: 'rgb(40, 167, 69)',
             borderColor: 'rgb(40, 167, 69)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            data: [0, 10, 5, 2, 20, 30, 45],
+            steppedLine: true
         }]
     },
 
