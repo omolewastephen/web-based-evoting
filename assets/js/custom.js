@@ -16,9 +16,6 @@ function Ajax(data)
 	return 
 }
 
-
-
-
 $("#p1").change(function(){
 	readURL(this);
 });
@@ -94,6 +91,46 @@ $(document).ready(function(){
 	    })
 
 	});
-})
+});
 
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Student Votes',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var cty = document.getElementById('myChart-2').getContext('2d');
+var chartx = new Chart(cty, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Election Stats',
+            backgroundColor: 'rgb(40, 167, 69)',
+            borderColor: 'rgb(40, 167, 69)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+            steppedLine: true
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
 

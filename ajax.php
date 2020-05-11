@@ -1,5 +1,5 @@
 <?php
-require 'init.php';
+require 'theme\init.php';
 
 if(isset($_POST['email']) AND isset($_POST['password']))
 {
